@@ -1,7 +1,8 @@
 import React from "react";
-import { render, fireEvent, waitFor, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { NavBar } from ".";
 import { NavBarLink } from "./navBar.model";
+import { HashRouter } from "react-router-dom";
 
 const LINKS: NavBarLink[] = [
   {
@@ -15,7 +16,12 @@ const LINKS: NavBarLink[] = [
 ];
 
 test("create links based on props", () => {
-  render(<NavBar links={LINKS} />);
+  // NavBar is rendered inside of <Router> as <Link> only work in this context.
+  render(
+    <HashRouter>
+      <NavBar links={LINKS} />
+    </HashRouter>,
+  );
 
   expect(screen.getByText(LINKS[0].label)).toBeTruthy();
   expect(screen.getByText(LINKS[1].label)).toBeTruthy();
