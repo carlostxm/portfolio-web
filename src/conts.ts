@@ -28,3 +28,7 @@ export const ROUTING_CONFIG: NavBarLink[] = [
     page: Contact,
   },
 ];
+
+export const THEME_ROOT_TESTID = "page--theme-wrapper";
+export const THEME_DARK_ICON_TESTID = "theme-button--dark";
+export const THEME_LIGHT_ICON_TESTID = "theme-button--light";

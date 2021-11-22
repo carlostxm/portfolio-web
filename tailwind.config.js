@@ -5,7 +5,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      fill: ['hover'], //enabled SVG fill variants
+    },
   },
   plugins: [],
 }

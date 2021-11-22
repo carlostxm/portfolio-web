@@ -1,4 +1,5 @@
 import React from "react";
+import { Theme } from "../model";
 
 export interface NavBarLink {
   id: string;
@@ -10,4 +11,5 @@ export interface NavBarLink {
 
 export interface NavBarProps {
   links: NavBarLink[];
+  onChangeTheme: (theme: Theme) => void;
 }
