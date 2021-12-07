@@ -11,8 +11,8 @@ export const Home: React.FC<PageProps> = (props) => {
         Engineer, Software developer and Front-end specialist.
       </h1>
       <h2 className="p-4 h2-text">
-        Think. Design. Specify. Implement. Test. Broke. Fix. Test. Optimize.
-        Test. Build. Ship.
+        Think. Design. Specify. Test. Break. Implement. Test. Optimize. Test.
+        Build. Ship.
       </h2>
       <div className="justify-center mt-5 sm:mt-8 sm:flex">
         <div className="rounded-md shadow">
