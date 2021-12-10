@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css";
-import { NavBar } from "./components";
+import { Footer, NavBar } from "./components";
 import { ROUTING_CONFIG, THEME_ROOT_TESTID } from "./conts";
 import { AppRouter } from "./app.routes";
 import { ThemeContext } from "./context";
@@ -21,7 +21,7 @@ const App: React.FC<{}> = () => {
     <ThemeContext.Provider value={theme}>
       <div className={rootClassNames} data-testid={THEME_ROOT_TESTID}>
         <div className="text-center transition duration-500 bg-white dark:bg-gray-900">
-          <header className="sticky top-0 z-40 flex flex-none w-full h-16 mx-auto lg:z-50 max-w-8xl">
+          <header className="top-0 z-40 flex flex-none w-full h-16 mx-auto lg:z-50 max-w-8xl">
             <NavBar links={ROUTING_CONFIG} onChangeTheme={handleChangeTheme} />
           </header>
           <main>
@@ -29,11 +29,7 @@ const App: React.FC<{}> = () => {
               <AppRouter routes={ROUTING_CONFIG} />
             </div>
           </main>
-          <footer className="flex flex-col justify-center w-full pt-16 pb-16 align-center">
-            <div className="relative mx-10vw">
-              <p className="p-text">Handcrafted with ♥ by carlostxm</p>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </div>
     </ThemeContext.Provider>
