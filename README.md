@@ -1,5 +1,7 @@
 # Portfolio Web Application
 
+:warning: Project under development
+
 This is my personal portfolio web application.
 
 ## Launch application
@@ -8,7 +10,10 @@ In case you want to launch the project in your local machine is recommended to u
 
 ## Technology stack
 
-React.js
-Typescript
-React Testing Library
-Tailwind CSS
+- React.js
+- Typescript
+- React Testing Library
+- Tailwind CSS
+
+## CI
+- Github Actions
